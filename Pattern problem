@@ -1,0 +1,21 @@
+ class Program
+    {
+        static void Main(string[] args)
+        {
+
+            var x = 9;
+            int m = x / 2;
+
+            for (int i = 0; i < 6; i++)
+            {
+                for (int j = 0; j < x; j++)
+                {
+                    if (j == m || (m-i < j && m > j) || (m + i > j && m < j)) Console.Write("*");
+                    else Console.Write("_");
+                }
+
+                Console.Write("\n");
+            }           
+        }
+    }
+}
